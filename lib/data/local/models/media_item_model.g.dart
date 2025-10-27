@@ -15,7 +15,7 @@ extension GetMediaItemCollection on Isar {
 
 const MediaItemSchema = CollectionSchema(
   name: r'MediaItem',
-  id: 3893864289923902342,
+  id: 1,
   properties: {
     r'externalId': PropertySchema(
       id: 0,

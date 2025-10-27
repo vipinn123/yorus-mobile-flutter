@@ -3,7 +3,7 @@ import 'package:isar/isar.dart';
 
 part 'media_item_model.g.dart'; // Generated file for Isar
 
-@collection
+@Collection(accessor: 'mediaItems')
 class MediaItem {
   Id id = Isar.autoIncrement; // Isar ID
   String? externalId; // e.g., TMDB ID, Spotify ID

@@ -36,7 +36,7 @@ dependencies:
   riverpod_annotation: ^2.1.0 # For code generation
 
   # Navigation
-  go_router: ^11.0.0 # Or the latest stable version
+  go_router: ^16.3.0 # Or the latest stable version
 
   # Local Persistence
   isar: ^3.1.0+1 # Or the latest stable version
@@ -48,13 +48,13 @@ dependencies:
   dio: ^5.0.0 # Or the latest stable version
 
   # Authentication (Firebase)
-  firebase_core: ^2.15.0 # Or the latest stable version
-  firebase_auth: ^4.7.0
-  google_sign_in: ^6.1.0
-  sign_in_with_apple: ^4.3.0 # For iOS devices
+  firebase_core: ^4.2.0 # Or the latest stable version
+  firebase_auth: ^6.1.1
+  google_sign_in: ^6.2.1
+  sign_in_with_apple: ^7.0.1 # For iOS devices
 
   # Security (Local storage for tokens)
-  flutter_secure_storage: ^8.0.0
+  flutter_secure_storage: ^9.2.4
 
   # SVG Assets
   flutter_svg: ^2.0.7 # For SVG icon rendering
@@ -76,7 +76,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
 
   build_runner: ^2.4.6 # For code generation (Riverpod, Freezed, Isar)
   riverpod_generator: ^2.3.0
@@ -95,9 +95,9 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-  assets:
-    - assets/icons/ # For your SVG icons
-    - assets/images/ # For any raster images
+  #assets:
+  #  - assets/icons/ # For your SVG icons
+  #  - assets/images/ # For any raster images
 
   # To add assets to your application, add an assets section, like this:
   # assets:
