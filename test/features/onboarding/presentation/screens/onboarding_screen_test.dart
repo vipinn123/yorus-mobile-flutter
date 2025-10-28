@@ -28,7 +28,7 @@ void main() {
     expect(find.text('Movie 1'), findsOneWidget);
 
     // Check initial progress
-    expect(tester.widget<LinearProgressIndicator>(find.byType(LinearProgressIndicator)).value, 1 / 5);
+    expect(tester.widget<LinearProgressIndicator>(find.byType(LinearProgressIndicator)).value, 0);
 
     // Simulate a swipe.
     await tester.drag(find.byType(CardSwiper), const Offset(-500, 0));
@@ -41,7 +41,7 @@ void main() {
     expect(find.text('Book 2'), findsOneWidget);
 
     // Check updated progress
-    expect(tester.widget<LinearProgressIndicator>(find.byType(LinearProgressIndicator)).value, 2 / 5);
+    expect(tester.widget<LinearProgressIndicator>(find.byType(LinearProgressIndicator)).value, 1 / 5);
   });
 
   testWidgets('OnboardingScreen shows rating overlay on tap', (WidgetTester tester) async {
@@ -93,6 +93,28 @@ void main() {
     // Tap the skip button.
     await tester.tap(find.text('Skip'));
     await tester.pumpAndSettle();
+
+    // Verify that we have navigated to the home screen.
+    expect(find.text('Home Screen'), findsOneWidget);
+  });
+
+  testWidgets('OnboardingScreen navigates on end', (WidgetTester tester) async {
+    await tester.pumpWidget(
+      MaterialApp.router(
+        routerConfig: GoRouter(
+          routes: [
+            GoRoute(path: '/', builder: (context, state) => const OnboardingScreen()),
+            GoRoute(path: '/home', builder: (context, state) => const Scaffold(body: Text('Home Screen'))),
+          ],
+        ),
+      ),
+    );
+
+    // Swipe through all the cards
+    for (int i = 0; i < 5; i++) {
+      await tester.drag(find.byType(CardSwiper), const Offset(-500, 0));
+      await tester.pumpAndSettle();
+    }
 
     // Verify that we have navigated to the home screen.
     expect(find.text('Home Screen'), findsOneWidget);

@@ -1,0 +1,19 @@
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="150" height="150" rx="8" fill="#334155"/>
+    
+    <path d="M60 105V63.105C60 61.1244 61.9421 59.7049 63.81 60.1887L96.31 68.3262C98.1779 68.81 99.5 70.5256 99.5 72.435V105" 
+          stroke="#CBD5E1" 
+          stroke-width="6" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    <path d="M60 105C68.2843 105 75 98.2843 75 90C75 81.7157 68.2843 75 60 75C51.7157 75 45 81.7157 45 90C45 98.2843 51.7157 105 60 105Z" 
+          stroke="#CBD5E1" 
+          stroke-width="6" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    <path d="M99.5 105C107.784 105 114.5 98.2843 114.5 90C114.5 81.7157 107.784 75 99.5 75C91.2157 75 84.5 81.7157 84.5 90C84.5 98.2843 91.2157 105 99.5 105Z" 
+          stroke="#CBD5E1" 
+          stroke-width="6" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+</svg>

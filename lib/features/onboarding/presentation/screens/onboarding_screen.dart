@@ -39,16 +39,22 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       ),
       body: Column(
         children: [
-          LinearProgressIndicator(value: (_currentIndex + 1) / cards.length),
+          LinearProgressIndicator(value: (_currentIndex) / cards.length),
           Expanded(
             child: CardSwiper(
               controller: _controller,
               cardsCount: cards.length,
               onSwipe: (previousIndex, currentIndex, direction) {
                 setState(() {
-                  _currentIndex = currentIndex ?? 0;
+                  _currentIndex = (currentIndex ?? 0);
                 });
                 return true;
+              },
+              onEnd: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('All set! We\'ve found your vibe.')),
+                );
+                context.go('/home');
               },
               cardBuilder: (context, index, percentThresholdX, percentThresholdY) {
                 final card = cards[index];
