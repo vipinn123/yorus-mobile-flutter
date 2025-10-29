@@ -16,12 +16,12 @@ class AuthScreen extends ConsumerWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SvgPicture.asset('web/assets/icons/logo.svg', height: 100, width: 100),
+            SvgPicture.asset('assets/icons/logo.svg', height: 100, width: 100),
             const SizedBox(height: 40),
             Text('Welcome to Yorus!', style: Theme.of(context).textTheme.headlineLarge),
             const SizedBox(height: 20),
             ElevatedButton.icon(
-              icon: SvgPicture.asset('web/assets/icons/icon_google.svg', height: 24, width: 24),
+              icon: SvgPicture.asset('assets/icons/icon_google.svg', height: 24, width: 24),
               label: const Text('Sign in with Google'),
               onPressed: () async {
                 print("Sign-in process started");
@@ -38,7 +38,7 @@ class AuthScreen extends ConsumerWidget {
             ),
             const SizedBox(height: 10),
             ElevatedButton.icon(
-              icon: SvgPicture.asset('web/assets/icons/icon_apple.svg', height: 24, width: 24),
+              icon: SvgPicture.asset('assets/icons/icon_apple.svg', height: 24, width: 24),
               label: const Text('Sign in with Apple'),
               onPressed: () {
                 // TODO: Implement Apple Sign-In with Firebase (next steps)
