@@ -98,9 +98,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-  #assets:
-  #  - assets/icons/ # For your SVG icons
-  #  - assets/images/ # For any raster images
+  assets:
+    - web/assets/icons/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

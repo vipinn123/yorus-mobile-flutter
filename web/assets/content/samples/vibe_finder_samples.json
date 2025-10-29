@@ -1,0 +1,123 @@
+[
+  {
+    "id": 501,
+    "mediaType": "movie",
+    "title": "Inception",
+    "posterUrl": "https://picsum.photos/seed/inception/300/400"
+  },
+  {
+    "id": 502,
+    "mediaType": "music",
+    "title": "Dark Side of the Moon",
+    "posterUrl": "https://picsum.photos/seed/darksidemoon/300/300"
+  },
+  {
+    "id": 503,
+    "mediaType": "book",
+    "title": "Dune",
+    "posterUrl": "https://picsum.photos/seed/dune/300/400"
+  },
+  {
+    "id": 504,
+    "mediaType": "movie",
+    "title": "Parasite",
+    "posterUrl": "https://picsum.photos/seed/parasite/300/400"
+  },
+  {
+    "id": 505,
+    "mediaType": "movie",
+    "title": "The Godfather",
+    "posterUrl": "https://picsum.photos/seed/godfather/300/400"
+  },
+  {
+    "id": 506,
+    "mediaType": "music",
+    "title": "Thriller",
+    "posterUrl": "https://picsum.photos/seed/thriller/300/300"
+  },
+  {
+    "id": 507,
+    "mediaType": "book",
+    "title": "1984",
+    "posterUrl": "https://picsum.photos/seed/1984/300/400"
+  },
+  {
+    "id": 508,
+    "mediaType": "movie",
+    "title": "Everything Everywhere All at Once",
+    "posterUrl": "https://picsum.photos/seed/eeaa/300/400"
+  },
+  {
+    "id": 509,
+    "mediaType": "music",
+    "title": "Abbey Road",
+    "posterUrl": "https://picsum.photos/seed/abbeyroad/300/300"
+  },
+  {
+    "id": 510,
+    "mediaType": "movie",
+    "title": "Spirited Away",
+    "posterUrl": "https://picsum.photos/seed/spirited/300/400"
+  },
+  {
+    "id": 511,
+    "mediaType": "book",
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "posterUrl": "https://picsum.photos/seed/hitchhikers/300/400"
+  },
+  {
+    "id": 512,
+    "mediaType": "music",
+    "title": "Random Access Memories",
+    "posterUrl": "https://picsum.photos/seed/ram/300/300"
+  },
+  {
+    "id": 513,
+    "mediaType": "movie",
+    "title": "Blade Runner 2049",
+    "posterUrl": "https://picsum.photos/seed/bladerunner/300/400"
+  },
+  {
+    "id": 514,
+    "mediaType": "book",
+    "title": "Project Hail Mary",
+    "posterUrl": "https://picsum.photos/seed/hailmary/300/400"
+  },
+  {
+    "id": 515,
+    "mediaType": "movie",
+    "title": "Mad Max: Fury Road",
+    "posterUrl": "https://picsum.photos/seed/madmax/300/400"
+  },
+  {
+    "id": 516,
+    "mediaType": "music",
+    "title": "To Pimp a Butterfly",
+    "posterUrl": "https://picsum.photos/seed/tpab/300/300"
+  },
+  {
+    "id": 517,
+    "mediaType": "book",
+    "title": "The Name of the Wind",
+    "posterUrl": "https://picsum.photos/seed/namewind/300/400"
+  },
+  {
+    "id": 518,
+    "mediaType": "movie",
+    "title": "Arrival",
+    "posterUrl": "https://picsum.photos/seed/arrival/300/400"
+  },
+  {
+    "id": 519,
+    "mediaType": "music",
+    "title": "Rumours",
+    "posterUrl": "https://picsum.photos/seed/rumours/300/300"
+  },
+  {
+    "id": 520,
+    "mediaType": "book",
+    "title": "Atomic Habits",
+    "posterUrl": "https://picsum.photos/seed/atomichabits/300/400"
+  }
+]
+

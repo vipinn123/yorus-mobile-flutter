@@ -1,0 +1,169 @@
+Movies 
+
+[
+  {
+    "id": 1,
+    "mediaType": "movie",
+    "title": "Echoes of the Void",
+    "subtitle": "2025 · Sci-Fi/Thriller · 1h 55m",
+    "whyYoullLikeIt": "A mind-bending thriller that feels like 'Black Mirror' meets 'Arrival'. You'll be thinking about the ending for weeks.",
+    "posterUrl": "https://picsum.photos/seed/echoesvoid/300/400",
+    "thumbnailUrl": "https://picsum.photos/seed/echoesvoid/56/56",
+    "userRating": null
+  },
+  {
+    "id": 2,
+    "mediaType": "movie",
+    "title": "Rainy Day in June",
+    "subtitle": "2024 · Drama/Indie · 1h 42m",
+    "whyYoullLikeIt": "If you love quiet, character-driven stories with beautiful cinematography. Perfect for a cozy evening in.",
+    "posterUrl": "https://picsum.photos/seed/rainyday/300/400",
+    "thumbnailUrl": "https://picsum.photos/seed/rainyday/56/56",
+    "userRating": null
+  },
+  {
+    "id": 3,
+    "mediaType": "movie",
+    "title": "The Crimson Cipher",
+    "subtitle": "2025 · Action/Fantasy · 2h 20m",
+    "whyYoullLikeIt": "Pure, fun-filled adventure. It's got the fast-paced action of 'John Wick' set in the rich fantasy world of 'Shadow and Bone'.",
+    "posterUrl": "https://picsum.photos/seed/crimsoncipher/300/400",
+    "thumbnailUrl": "https://picsum.photos/seed/crimsoncipher/56/56",
+    "userRating": null
+  },
+  {
+    "id": 4,
+    "mediaType": "movie",
+    "title": "Neon Sunset",
+    "subtitle": "2024 · Crime/Drama · 2h 05m",
+    "whyYoullLikeIt": "A stylish, neo-noir thriller. It's all about the atmosphere, with a killer soundtrack and a vibe that's pure 'Drive'.",
+    "posterUrl": "https://picsum.photos/seed/neonsunset/300/400",
+    "thumbnailUrl": "https://picsum.photos/seed/neonsunset/56/56",
+    "userRating": null
+  },
+  {
+    "id": 5,
+    "mediaType": "movie",
+    "title": "The Last Archivist",
+    "subtitle": "2025 · Post-Apocalyptic · 1h 48m",
+    "whyYoullLikeIt": "A hopeful, quiet sci-fi story that's more about humanity than disaster. Perfect for fans of 'Station Eleven'.",
+    "posterUrl": "https://picsum.photos/seed/archivist/300/400",
+    "thumbnailUrl": "https://picsum.photos/seed/archivist/56/56",
+    "userRating": null
+  }
+]
+
+
+Books
+
+
+[
+  {
+    "id": 101,
+    "mediaType": "book",
+    "title": "The Sundered Sky",
+    "subtitle": "Elara Vance · 2024 · Fantasy",
+    "whyYoullLikeIt": "For fans of 'Name of the Wind'. A rich, complex world and a magic system that actually feels new.",
+    "posterUrl": "https://picsum.photos/seed/sunderedsky/300/400",
+    "thumbnailUrl": "https://picsum.photos/seed/sunderedsky/56/56",
+    "userRating": null
+  },
+  {
+    "id": 102,
+    "mediaType": "book",
+    "title": "The Last Passenger",
+    "subtitle": "Alex North · 2025 · Mystery/Thriller",
+    "whyYoullLikeIt": "A page-turner you won't be able to put down. It's got the 'unreliable narrator' vibe of 'Gone Girl' on a high-speed train.",
+    "posterUrl": "https://picsum.photos/seed/lastpassenger/300/400",
+    "thumbnailUrl": "https://picsum.photos/seed/lastpassenger/56/56",
+    "userRating": null
+  },
+  {
+    "id": 103,
+    "mediaType": "book",
+    "title": "City of Glass and Rust",
+    "subtitle": "M. K. Lobb · 2024 · Sci-Fi",
+    "whyYoullLikeIt": "Hard-hitting cyberpunk. If you're looking for something that explores big ideas about AI and society, this is it.",
+    "posterUrl": "https://picsum.photos/seed/cityglass/300/400",
+    "thumbnailUrl": "https://picsum.photos/seed/cityglass/56/56",
+    "userRating": null
+  },
+  {
+    "id": 104,
+    "mediaType": "book",
+    "title": "The Saltwater Cafe",
+    "subtitle": "Jenny Colgan · 2025 · Romance/Cozy",
+    "whyYoullLikeIt": "A warm, cozy read that feels like a hug. It's the perfect escape to a small seaside town with charming characters.",
+    "posterUrl": "https://picsum.photos/seed/saltwater/300/400",
+    "thumbnailUrl": "https://picsum.photos/seed/saltwater/56/56",
+    "userRating": null
+  },
+  {
+    "id": 105,
+    "mediaType": "book",
+    "title": "The Mercury Paradox",
+    "subtitle": "Blake Crouch · 2024 · Sci-Fi/Thriller",
+    "whyYoullLikeIt": "A fast-paced, high-concept thriller based on real science. It reads like a blockbuster movie in the best way possible.",
+    "posterUrl": "https://picsum.photos/seed/mercury/300/400",
+    "thumbnailUrl": "https://picsum.photos/seed/mercury/56/56",
+    "userRating": null
+  }
+]
+
+
+
+Music
+
+[
+  {
+    "id": 201,
+    "mediaType": "music",
+    "title": "Midnight Frequencies",
+    "subtitle": "The Static Age · 2025 · Album",
+    "whyYoullLikeIt": "Perfect for a late-night drive. If you like the 'Lo-fi beats' vibe but with a cinematic, synth-wave twist, this is for you.",
+    "posterUrl": "https://picsum.photos/seed/midnightfreq/300/300",
+    "thumbnailUrl": "https://picsum.photos/seed/midnightfreq/56/56",
+    "userRating": null
+  },
+  {
+    "id": 202,
+    "mediaType": "music",
+    "title": "Amber & Ash",
+    "subtitle": "Juniper Vale · 2024 · Album",
+    "whyYoullLikeIt": "Feels like a warm blanket. Acoustic, heartfelt lyrics that are perfect for fans of Bon Iver or The Lumineers.",
+    "posterUrl": "https://picsum.photos/seed/amberash/300/300",
+    "thumbnailUrl": "https://picsum.photos/seed/amberash/56/56",
+    "userRating": null
+  },
+  {
+    "id": 203,
+    "mediaType": "music",
+    "title": "Metropop",
+    "subtitle": "CHVRCHES · 2025 · Album",
+    "whyYoullLikeIt": "An explosion of upbeat, '80s-inspired synth-pop. This is pure energy, perfect for your workout or party playlist.",
+    "posterUrl": "https://picsum.photos/seed/metropop/300/300",
+    "thumbnailUrl": "https://picsum.photos/seed/metropop/56/56",
+    "userRating": null
+  },
+  {
+    "id": 204,
+    "mediaType": "music",
+    "title": "Kingston Grooves",
+    "subtitle": "Leon Bridges · 2024 · Album",
+    "whyYoullLikeIt": "Pure retro-soul and R&B. It's got that timeless, analog warmth that makes you want to get up and dance.",
+    "posterUrl": "https://picsum.photos/seed/kingston/300/300",
+    "thumbnailUrl": "https://picsum.photos/seed/kingston/56/56",
+    "userRating": null
+  },
+  {
+    "id": 205,
+    "mediaType": "music",
+    "title": "Daydreamer's Sketchbook",
+    "subtitle": "Nujabes · 2025 · Album",
+    "whyYoullLikeIt": "The ultimate chillhop/jazz-hop album. It's the perfect background music for focusing, studying, or just relaxing.",
+    "posterUrl": "https://picsum.photos/seed/daydreamer/300/300",
+    "thumbnailUrl": "https://picsum.photos/seed/daydreamer/56/56",
+    "userRating": null
+  }
+]
+

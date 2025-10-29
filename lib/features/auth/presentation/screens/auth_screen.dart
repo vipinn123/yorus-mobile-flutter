@@ -1,6 +1,7 @@
 // lib/features/auth/presentation/screens/auth_screen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:yorus_mobile/services/google_sign_in_service.dart';
 
@@ -15,9 +16,13 @@ class AuthScreen extends ConsumerWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SvgPicture.asset('web/assets/icons/logo.svg', height: 100, width: 100),
+            const SizedBox(height: 40),
             Text('Welcome to Yorus!', style: Theme.of(context).textTheme.headlineLarge),
             const SizedBox(height: 20),
-            ElevatedButton(
+            ElevatedButton.icon(
+              icon: SvgPicture.asset('web/assets/icons/icon_google.svg', height: 24, width: 24),
+              label: const Text('Sign in with Google'),
               onPressed: () async {
                 print("Sign-in process started");
                 final user = await ref.read(googleSignInServiceProvider).signInWithGoogle();
@@ -30,15 +35,15 @@ class AuthScreen extends ConsumerWidget {
                   print("Sign-in failed, user is null");
                 }
               },
-              child: const Text('Sign in with Google'),
             ),
             const SizedBox(height: 10),
-            ElevatedButton(
+            ElevatedButton.icon(
+              icon: SvgPicture.asset('web/assets/icons/icon_apple.svg', height: 24, width: 24),
+              label: const Text('Sign in with Apple'),
               onPressed: () {
                 // TODO: Implement Apple Sign-In with Firebase (next steps)
                 print('Sign in with Apple button pressed');
               },
-              child: const Text('Sign in with Apple'),
             ),
           ],
         ),
