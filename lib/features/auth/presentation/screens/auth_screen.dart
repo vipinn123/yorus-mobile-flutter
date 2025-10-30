@@ -24,15 +24,9 @@ class AuthScreen extends ConsumerWidget {
               icon: SvgPicture.asset('assets/icons/icon_google.svg', height: 24, width: 24),
               label: const Text('Sign in with Google'),
               onPressed: () async {
-                print("Sign-in process started");
                 final user = await ref.read(googleSignInServiceProvider).signInWithGoogle();
-                print("User object: $user");
                 if (user != null) {
-                  print("Navigating to onboarding screen");
-                  context.go('/onboarding');
-                  print("Navigation command issued");
-                } else {
-                  print("Sign-in failed, user is null");
+                  context.go('/');
                 }
               },
             ),

@@ -31,7 +31,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
         title: const Text('Do you like this?'),
         actions: [
           TextButton(
-            onPressed: () => context.go('/home'),
+            onPressed: () => context.go('/'),
             child: const Text('Skip'),
           ),
         ],
@@ -53,7 +53,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(content: Text('All set! We\'ve found your vibe.')),
                 );
-                context.go('/home');
+                context.go('/');
               },
               cardBuilder: (context, index, percentThresholdX, percentThresholdY) {
                 final card = cards[index];

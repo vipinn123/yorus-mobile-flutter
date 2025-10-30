@@ -5,6 +5,7 @@ import 'package:yorus_mobile/features/home/presentation/view_models/home_view_mo
 import 'package:yorus_mobile/features/home/presentation/widgets/home_action_buttons.dart';
 import 'package:yorus_mobile/features/home/presentation/widgets/mood_filter_bar.dart';
 import 'package:yorus_mobile/features/home/presentation/widgets/recommendation_card.dart';
+import 'package:yorus_mobile/services/google_sign_in_service.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -15,7 +16,15 @@ class HomeScreen extends ConsumerWidget {
     final viewModel = ref.read(homeViewModelProvider.notifier);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Yorus Home')),
+      appBar: AppBar(
+        title: const Text('Yorus Home'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.logout),
+            onPressed: () => ref.read(googleSignInServiceProvider).signOutGoogle(),
+          ),
+        ],
+      ),
       body: state.isLoading
           ? const Center(child: CircularProgressIndicator())
           : Column(
