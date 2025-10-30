@@ -5,13 +5,21 @@ import 'package:yorus_mobile/features/home/presentation/view_models/home_view_mo
 import 'package:yorus_mobile/features/home/presentation/widgets/home_action_buttons.dart';
 import 'package:yorus_mobile/features/home/presentation/widgets/mood_filter_bar.dart';
 import 'package:yorus_mobile/features/home/presentation/widgets/recommendation_card.dart';
+import 'package:yorus_mobile/features/onboarding/presentation/widgets/rating_overlay.dart';
 import 'package:yorus_mobile/services/google_sign_in_service.dart';
 
-class HomeScreen extends ConsumerWidget {
+class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends ConsumerState<HomeScreen> {
+  bool _isRatingOverlayVisible = false;
+
+  @override
+  Widget build(BuildContext context) {
     final state = ref.watch(homeViewModelProvider);
     final viewModel = ref.read(homeViewModelProvider.notifier);
 
@@ -47,9 +55,24 @@ class HomeScreen extends ConsumerWidget {
                         viewModel.nextRecommendation();
                       }
                     },
-                    child: state.recommendations.isNotEmpty
-                        ? RecommendationCard(item: state.recommendations.first)
-                        : const Center(child: Text('No recommendations available.')),
+                    child: Stack(
+                      children: [
+                        if (state.recommendations.isNotEmpty)
+                          RecommendationCard(item: state.recommendations.first),
+                        if (_isRatingOverlayVisible)
+                          RatingOverlay(
+                            onRatingSelected: (rating) {
+                              print('Rated ${state.recommendations.first.title} as $rating');
+                              setState(() {
+                                _isRatingOverlayVisible = false;
+                              });
+                              viewModel.nextRecommendation();
+                            },
+                          ),
+                        if (state.recommendations.isEmpty)
+                          const Center(child: Text('No recommendations available.')),
+                      ],
+                    ),
                   ),
                 ),
                 if (state.recommendations.isNotEmpty)
@@ -57,7 +80,11 @@ class HomeScreen extends ConsumerWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: HomeActionButtons(
                       onAddToQueue: () => viewModel.addToQueue(),
-                      onSeenIt: () {},
+                      onSeenIt: () {
+                        setState(() {
+                          _isRatingOverlayVisible = true;
+                        });
+                      },
                       onNotForMe: () => viewModel.nextRecommendation(),
                     ),
                   ),

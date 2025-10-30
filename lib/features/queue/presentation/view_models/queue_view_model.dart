@@ -19,6 +19,12 @@ class QueueViewModel extends StateNotifier<List<MediaItem>> {
     await _repository.addToQueue(item);
     await getQueue();
   }
+
+  void removeFromQueue(MediaItem item) {
+    final currentQueue = List<MediaItem>.from(state);
+    currentQueue.remove(item);
+    state = currentQueue;
+  }
 }
 
 final queueViewModelProvider = StateNotifierProvider<QueueViewModel, List<MediaItem>>((ref) {
