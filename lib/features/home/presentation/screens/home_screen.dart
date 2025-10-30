@@ -1,6 +1,7 @@
 // lib/features/home/presentation/screens/home_screen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:yorus_mobile/features/done/presentation/view_models/done_view_model.dart';
 import 'package:yorus_mobile/features/home/presentation/view_models/home_view_model.dart';
 import 'package:yorus_mobile/features/home/presentation/widgets/home_action_buttons.dart';
 import 'package:yorus_mobile/features/home/presentation/widgets/mood_filter_bar.dart';
@@ -22,6 +23,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   Widget build(BuildContext context) {
     final state = ref.watch(homeViewModelProvider);
     final viewModel = ref.read(homeViewModelProvider.notifier);
+    final doneViewModel = ref.read(doneViewModelProvider.notifier);
 
     return Scaffold(
       appBar: AppBar(
@@ -62,7 +64,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         if (_isRatingOverlayVisible)
                           RatingOverlay(
                             onRatingSelected: (rating) {
-                              print('Rated ${state.recommendations.first.title} as $rating');
+                              doneViewModel.addToDone(state.recommendations.first);
                               setState(() {
                                 _isRatingOverlayVisible = false;
                               });
