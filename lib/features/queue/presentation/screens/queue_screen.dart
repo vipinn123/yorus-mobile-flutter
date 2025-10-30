@@ -14,7 +14,6 @@ class QueueScreen extends ConsumerWidget {
     final viewModel = ref.read(queueViewModelProvider.notifier);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('My Queue')),
       body: Column(
         children: [
           MoodFilterBar(

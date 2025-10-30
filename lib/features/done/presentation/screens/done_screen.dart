@@ -13,7 +13,6 @@ class DoneScreen extends ConsumerWidget {
     final doneItems = ref.watch(doneViewModelProvider);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('My Library')),
       body: Column(
         children: [
           MoodFilterBar(

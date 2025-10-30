@@ -7,7 +7,6 @@ import 'package:yorus_mobile/features/home/presentation/widgets/home_action_butt
 import 'package:yorus_mobile/features/home/presentation/widgets/mood_filter_bar.dart';
 import 'package:yorus_mobile/features/home/presentation/widgets/recommendation_card.dart';
 import 'package:yorus_mobile/features/onboarding/presentation/widgets/rating_overlay.dart';
-import 'package:yorus_mobile/services/google_sign_in_service.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -26,15 +25,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     final doneViewModel = ref.read(doneViewModelProvider.notifier);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Yorus Home'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.logout),
-            onPressed: () => ref.read(googleSignInServiceProvider).signOutGoogle(),
-          ),
-        ],
-      ),
       body: state.isLoading
           ? const Center(child: CircularProgressIndicator())
           : Column(
