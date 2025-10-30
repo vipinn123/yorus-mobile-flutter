@@ -32,17 +32,24 @@ class HomeScreen extends ConsumerWidget {
                   onFilterSelected: (filter) => viewModel.setFilter(filter),
                 ),
                 Expanded(
-                  child: state.recommendations.isNotEmpty
-                      ? RecommendationCard(item: state.recommendations.first)
-                      : const Center(child: Text('No recommendations available.')),
+                  child: GestureDetector(
+                    onVerticalDragEnd: (details) {
+                      if (details.primaryVelocity! > 0) {
+                        viewModel.nextRecommendation();
+                      }
+                    },
+                    child: state.recommendations.isNotEmpty
+                        ? RecommendationCard(item: state.recommendations.first)
+                        : const Center(child: Text('No recommendations available.')),
+                  ),
                 ),
                 if (state.recommendations.isNotEmpty)
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: HomeActionButtons(
-                      onAddToQueue: () {},
+                      onAddToQueue: () => viewModel.addToQueue(),
                       onSeenIt: () {},
-                      onNotForMe: () => viewModel.fetchRecommendations(), // For now, just fetch a new one
+                      onNotForMe: () => viewModel.nextRecommendation(),
                     ),
                   ),
               ],

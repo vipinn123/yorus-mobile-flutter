@@ -22,4 +22,20 @@ void main() {
     expect(state.isLoading, isFalse);
     expect(state.recommendations.isNotEmpty, isTrue);
   });
+
+  test('HomeViewModel sets filter', () {
+    final container = ProviderContainer(
+      overrides: [
+        mediaRepositoryProvider.overrideWithValue(MockMediaRepository()),
+      ],
+    );
+
+    final viewModel = container.read(homeViewModelProvider.notifier);
+
+    viewModel.setFilter('Movies');
+
+    final state = container.read(homeViewModelProvider);
+
+    expect(state.selectedFilter, 'Movies');
+  });
 }

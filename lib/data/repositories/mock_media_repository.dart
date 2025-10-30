@@ -30,6 +30,22 @@ class MockMediaRepository implements MediaRepository {
         whyYoullLikeIt: "Perfect for a late-night drive. If you like the 'Lo-fi beats' vibe but with a cinematic, synth-wave twist, this is for you.",
         imageUrl: "https://picsum.photos/seed/midnightfreq/300/300",
       ),
+      const MediaItem(
+        id: '2',
+        mediaType: MediaType.movie,
+        title: 'Rainy Day in June',
+        subtitle: '2024 • Drama/Indie • 1h 42m',
+        whyYoullLikeIt: "If you love quiet, character-driven stories with beautiful cinematography. Perfect for a cozy evening in.",
+        imageUrl: "https://picsum.photos/seed/rainyday/300/400",
+      ),
+      const MediaItem(
+        id: '102',
+        mediaType: MediaType.book,
+        title: 'The Last Passenger',
+        subtitle: "Alex North • 2025 • Mystery/Thriller",
+        whyYoullLikeIt: "A page-turner you won't be able to put down. It's got the 'unreliable narrator' vibe of 'Gone Girl' on a high-speed train.",
+        imageUrl: "https://picsum.photos/seed/lastpassenger/300/400",
+      ),
     ];
   }
 }
