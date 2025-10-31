@@ -17,10 +17,7 @@ class MainScaffold extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.search),
-            onPressed: () {
-              // TODO: Implement Search
-              print('Search button pressed');
-            },
+            onPressed: () => context.go('/search'),
           ),
           IconButton(
             icon: const Icon(Icons.settings),

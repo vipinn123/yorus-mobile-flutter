@@ -8,6 +8,7 @@ import 'package:yorus_mobile/features/home/presentation/screens/home_screen.dart
 import 'package:yorus_mobile/features/queue/presentation/screens/queue_screen.dart';
 import 'package:yorus_mobile/features/done/presentation/screens/done_screen.dart';
 import 'package:yorus_mobile/features/settings/presentation/screens/settings_screen.dart';
+import 'package:yorus_mobile/features/search/presentation/screens/search_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
@@ -42,6 +43,10 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/settings',
         builder: (context, state) => const SettingsScreen(),
+      ),
+      GoRoute(
+        path: '/search',
+        builder: (context, state) => const SearchScreen(),
       ),
       StatefulShellRoute.indexedStack(
         builder: (context, state, navigationShell) => MainScaffold(navigationShell: navigationShell),
